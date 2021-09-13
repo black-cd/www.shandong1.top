@@ -477,7 +477,7 @@
 <p><strong>前面有这类的文章;</strong><br><img src="img_15.png"></p>
 <p><strong>10.安全日志文件大小至少为128MB,设置当达到最大的日志大小上限时,覆盖早于30天的日志</strong></p>
 <p><strong>上一篇文章有</strong><br><img src="img_16.png"></p>
-<p><strong>任务五:服务加固SSHD\VSFTPD\IIS (Windows,Linux)<br>11.SSH服务加固(Linux)<br>a.ssh禁止ROOT用户远程登录<br>上篇文章有</strong><br><img src="img_17.png"><br><strong>b.设置root用户的计划任务。每天早上7:50自动开启ssh服务,22:50关闭;每周六的7:30重新启动ssh服务<br>输入命令    crontab -e<br>50 7 * * * /usr/bin/service start sshd   :每天早上7:50自动开启ssh服务<br>50 22 * * * /usr/bin/service stop sshd    :22:50关闭<br>30 7 * * 6 /usr/bin/service start sshd    :每周六的7:30重新启动ssh服务</strong><br><img src="img_18.png"></p>
+<p><strong>任务五:服务加固SSHD\VSFTPD\IIS (Windows,Linux)<br>11.SSH服务加固(Linux)<br>a.ssh禁止ROOT用户远程登录<br>上篇文章有</strong><br><img src="img_17.png"><br><strong>b.设置root用户的计划任务。每天早上7:50自动开启ssh服务,22:50关闭;每周六的7:30重新启动ssh服务<br>输入命令    crontab -e<br>50 7 * * * /usr/bin/service start sshd   :每天早上7:50自动开启ssh服务<br>50 22 * * * /usr/bin/service stop sshd    :22:50关闭<br>30 7 * * 6 /usr/bin/service restart sshd    :每周六的7:30重新启动ssh服务</strong><br><img src="img_18.png"></p>
 <p><strong>12.VSFTPD 服务加固 (Linux)<br>a.设置无任何操作的超时时间为5分钟;<br>vi /etc/vsftpd/vsftpd.conf</strong><br><img src="img_19.png"><br><strong>b.匿名用户访问的最大传输速率为512KB/S.<br>vi /etc/vsftpd/vsftpd.conf</strong></p>
 <p><strong>Anon_max_rate=0   限制匿名最大传输速率</strong></p>
 <p><strong>13.IIS加固(Windows)<br>a.为了减轻网站负载,设置网站最大并发连接数为1000;<br>上篇文章</strong><br><img src="img_20.png"><br><strong>b.防止文件枚举漏洞枚举网络服务器根目录文件,禁止IIS短文件名泄露。<br>不会:<br>自己感觉思路:<br>修改注册表禁用短文件名功能<br>regedit—&gt;HEKY_LOCAL_MACHINE—&gt;SYSTEM—&gt;CurrentControlSet—&gt;Control—&gt;<br>FileSystem—&gt;将NtfsDisable8dot3NameCreation<br>修改值为1</strong></p>
