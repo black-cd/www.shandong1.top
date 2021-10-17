@@ -101,6 +101,10 @@
                                     
                                 
                                     
+                                        <li><a href="/guestbook/"><i class="fa fa-book"></i>留言版</a></li>
+                                    
+                                
+                                    
                                         <li>
                                             <a><i class="fa fa-link"></i>链接</a>
                                             <ul class="sub-menu">
@@ -172,6 +176,30 @@
             </div>
         </footer>
     </div>
+    
+        <div id="v-comments" class="post-comments"></div>
+<script>
+    var load_comm = () => {
+        const init = () => {
+            new Valine({
+                el: '#v-comments',
+                appId: 'GTRbdDn8kb3aGj2WuGDlsCzD-gzGzoHsz',
+                appKey: 't8ml0wW6SGgyl8I1vl1Oi9wO',
+                visitor: true,
+                enableQQ: true,
+                path: '/about/index-1.html'
+            });
+        }
+        if (typeof Valine == 'undefined') {
+            const src = 'https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js';
+            $.getScript(src, init);
+        } else {
+            init();
+        }
+    };
+</script>
+<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://valine.js.org/">comments powered by Valine.</a></noscript>
+
     
 </article>
 

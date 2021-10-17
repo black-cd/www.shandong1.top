@@ -99,6 +99,10 @@
                                     
                                 
                                     
+                                        <li><a href="/guestbook/"><i class="fa fa-book"></i>留言版</a></li>
+                                    
+                                
+                                    
                                         <li>
                                             <a><i class="fa fa-link"></i>链接</a>
                                             <ul class="sub-menu">
@@ -198,6 +202,11 @@
                         
                             <!-- 当前仅支持valine/waline自带的统计功能 -->
                             
+                                <a id="/2021/04/12/%E6%B8%97%E9%80%8F%E8%BF%9B%E5%85%A5win7-%E5%88%A9%E7%94%A8mimikatz%E7%A0%B4%E8%A7%A3%E5%AF%86%E7%A0%81/" class="leancloud_visitors" data-flag-title="渗透进入win7,利用mimikatz破解密码">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="leancloud-visitors-count"> </span> 次阅读
+                                </a>
+                            
                         
                         
                             <!-- 当前仅支持waline自带的统计功能 -->
@@ -250,6 +259,11 @@
                         
                             <!-- 当前仅支持valine/waline自带的统计功能 -->
                             
+                                <a id="/2021/04/12/%E6%B8%97%E9%80%8Fwin7%E5%AE%9E%E6%96%BD%E5%85%B3%E6%9C%BA%E5%91%BD%E4%BB%A4/" class="leancloud_visitors" data-flag-title="渗透win7实施关机命令">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="leancloud-visitors-count"> </span> 次阅读
+                                </a>
+                            
                         
                         
                             <!-- 当前仅支持waline自带的统计功能 -->
@@ -274,6 +288,30 @@
 
     <div class="hidden">
         <!-- 加载文章阅读对应的统计功能，评论自带的那种 -->
+        
+            <div id="v-comments" class="post-comments"></div>
+<script>
+    var load_comm = () => {
+        const init = () => {
+            new Valine({
+                el: '#v-comments',
+                appId: 'GTRbdDn8kb3aGj2WuGDlsCzD-gzGzoHsz',
+                appKey: 't8ml0wW6SGgyl8I1vl1Oi9wO',
+                visitor: true,
+                enableQQ: true,
+                path: '/page/3/index.html'
+            });
+        }
+        if (typeof Valine == 'undefined') {
+            const src = 'https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js';
+            $.getScript(src, init);
+        } else {
+            init();
+        }
+    };
+</script>
+<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://valine.js.org/">comments powered by Valine.</a></noscript>
+
         
     </div>
 
